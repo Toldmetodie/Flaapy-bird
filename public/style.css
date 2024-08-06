@@ -1,0 +1,45 @@
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: rgb(14, 14, 14);
+}
+
+#board {
+    /* background-color: skyblue; */
+    background-image: url("./flappybirdbg.png");
+}
+
+.container {
+    position: relative;
+}
+
+#restart-container {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    width: 100%;
+}
+
+#stage-container {
+    display: none;
+    gap:10px;
+    position: absolute;
+    top: 60%;
+    left: 39%;
+    width: 100%;
+    z-index: 10;
+}
+
+#highScore {
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    bottom: 570px;
+    left: 880px;
+    font-family: sans-serif;
+  }

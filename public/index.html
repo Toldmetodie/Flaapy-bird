@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" , content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="board">
+
+        </canvas>
+        <h1 id="highScore"></h1>
+        <div id="stage-container">
+            <button
+                style="height: 50px; width: 100px; background-color: orange; border-color: white; border-radius: 10px; color:white;"
+                onclick="changeStage('easy')">easy</button>
+            <button
+                style="height: 50px; width: 100px; background-color: orange; border-color: white; border-radius: 10px; color:white;"
+                onclick="changeStage('medium')">medium</button>
+            <button
+                style="height: 50px; width: 100px; background-color: orange; border-color: white; border-radius: 10px; color:white;"
+                onclick="changeStage('hard')">hard</button>
+
+        </div>
+        <div id="restart-container">
+            <button
+                style="height: 50px; width: 150px; background-color: orange; border-color: white; border-radius: 10px; color:white;"
+                onclick="onStageChange()">select stage</button>
+            <button
+                style="height: 50px; width: 150px; background-color: orange; border-color: white; border-radius: 10px; color:white;"
+                onclick="restart()">restart</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
